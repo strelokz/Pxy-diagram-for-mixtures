@@ -55,7 +55,7 @@ classdef phase < handle
             obj.Am = Am; obj.Bm = Bm; obj.C = C;
         end
         %fugacity method
-        function obj = fugacitycalc(obj)
+        function obj = fugacitycalc(obj,state)
             A = 1;
             B = (obj.Bm-1);
             C = (obj.Am-3*obj.Bm^2-2*obj.Bm);
@@ -63,7 +63,12 @@ classdef phase < handle
             %compresibility factor
             Z = roots([A B C D]); %find the roots
             Z = Z(find(imag(Z)==0)); %find the real roots
-            Z = min(Z); %root for the liquid
+            switch state
+                case 'liquid'
+                    Z = min(Z); %root for the liquid
+                case 'vapor'
+                    Z = max(Z);
+            end
             phi1 = log((Z+(2^0.5+1)*obj.Bm)/(Z-(2^0.5-1)*obj.Bm));
             phi = exp(obj.b/obj.bm*(Z-1)-log(Z-obj.Bm)-obj.C/(2*2^0.5)*phi1);
             obj.Zfactor = Z; obj.fugacity = phi;
