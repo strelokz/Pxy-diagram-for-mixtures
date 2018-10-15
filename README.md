@@ -4,8 +4,8 @@ This program compute the composition of the liquid and vapor phase of a mixture 
 This is an object oriented implementation using MATLAB code.
 The equations utilized for the calculations are from the textbook FUNDAMENTALS OF CHEMICAL ENGINEERING THERMODINAMICS, Themis Matsoukas.
 
-Binary interaction parameters for the CO2/n-pentane mixture from Sandler pag. 565. 
+Binary interaction parameters for the CO2 / n-pentane mixture from Sandler pag. 565. 
 The computation gives a better aproximation to the real mixture properties if experimental binary parameters are used for the selected temperature.
 
-For the CO_2 - n-pentane mixture produce the following graph:
+For the CO2 / n-pentane mixture the scrip generates the following graph:
 ![screeshot](Pxy-co2-pentane.bmp)
