@@ -6,3 +6,6 @@ The equations utilized for the calculations are from the textbook FUNDAMENTALS O
 
 Binary interaction parameters for the CO2/n-pentane mixture from Sandler pag. 565. 
 The computation gives a better aproximation to the real mixture properties if experimental binary parameters are used for the selected temperature.
+
+For the CO_2 - n-pentane mixture produce the following graph:
+![screeshot](Pxy-co2-pentane.bmp)
