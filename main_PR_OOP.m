@@ -24,6 +24,3 @@ y = table(x',liquid.fugacity','RowNames',components);
 varnames = {'Xi','fugacity'};
 y.Properties.VariableNames = varnames;
 y
-
-
-
