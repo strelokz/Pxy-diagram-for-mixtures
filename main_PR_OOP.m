@@ -8,7 +8,6 @@ components = {'CO2' 'n-pentane'};
 T = 277.65; %Kelvin
 P = 16.15e5; %Pascal
 x = [0.32 0.68];%liquid mixture composition
-y = [0.5 0.5]; %vapor mixture compsition
 Tc = [304.2 469.7]; %critical temperature(K)
 Pc = [73.74 33.7]*1e5; %critical pressure(Pa)
 w = [0.225 0.252]; %acentric factor
