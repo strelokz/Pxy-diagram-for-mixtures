@@ -56,7 +56,7 @@ data
 plot([M(:,2),M(:,3)],M(:,1))
 
 legend({'Liquid line','Vapor line'},'location','northwest')
-title('Pxy diagram for the binary mixture: CO_2- pentane at 277.65K')
+title('Pxy diagram for the binary mixture: CO_2- pentane at 344.32K')
 ylabel('Presion(bar)')
 xlabel('CO_2 molar fraction')
 
