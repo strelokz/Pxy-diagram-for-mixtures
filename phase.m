@@ -1,7 +1,7 @@
 classdef phase < handle 
     %CLASS FOR THE CREATION OF PHASE(LIQUID,VAPOR) OBJECTS WITH PROPERTIES
     %CALCULATED USING PENG-ROBINSON EOS AND VDW MIXING RULES
-    properties %parameters and thermodynamic properties of the phase
+    properties %parameters and thermodynamic properties of the phase.
         %pure component parameters
         a,b,A,B
         %mixture parameters
